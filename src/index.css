@@ -1,0 +1,22 @@
+:root {
+  --bg-dark: #1e1e1e;
+  --bg-light: #f9f9f9;
+  --btn-dark: #333;
+  --btn-light: #fff;
+  --text-dark: #fff;
+  --text-light: #000;
+  --accent: #00cc66;
+  --operator: #007bff;
+  --special: #fbbc05;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
