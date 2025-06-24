@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5faff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-1 {
+  text-align: center;
+  padding: 180px 40px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 600px;
+  width: 350px;
+  margin-top: 100px;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+.logo span {
+  color: #1a73e8;
+}
+.lower-text {
+  margin-top: 300px;
+}
+.lower-text span {
+  color: black;
+  font-size: 20px;
+}
+/* .........................page 2...........................  */
+.page-2 {
+  margin: 110px 0;
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding-bottom: 40px;
+}
+
+
+.upper-card {
+  margin: 20px;
+  width: 88%;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #eef6ff;
+}
+.part-left, .part-right {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid white;
+}
+.bedtime-info {
+  padding: 5px;
+}
+.bedtime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bedtime-header h4 {
+  font-size: 14px;
+  color: #555;
+}
+.status {
+  background-color: #e4f9eb;
+  color: #1cbf73;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+.set-btn {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.goal {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+
+.text-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-top: 10px;
+}
+.alarm-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.more-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.alarm-card {
+  margin: 10px 20px;
+}
+.alarm {
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+.alarm-info {
+  display: flex;
+  flex-direction: column;
+}
+.alarm-time {
+  font-size: 20px;
+  font-weight: 600;
+}
+.alarm-days {
+  font-size: 12px;
+  color: #777;
+}
+
+.switch {
+  width: 40px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 20px;
+  position: relative;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+}
+.switch.on {
+  background: #2f80ed;
+}
+.switch.on::after {
+  left: 22px;
+}
+.lower-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.add-btn button {
+  background-color: #2f80ed;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
