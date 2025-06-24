@@ -1,5 +1,11 @@
-import "./index.css"
+import { useNavigate } from "react-router-dom";
+import "./index.css";
 const Calculate = () => {
+  const navigation = useNavigate();
+  const NavigateToAlram = () => {
+    console.log("in navigation")
+    navigation("/splash");
+  };
   return (
     <div class="wrapper">
       <div class="calculator dark-mode" id="calcBox">
@@ -60,8 +66,8 @@ const Calculate = () => {
           <button class="btn operator" onclick="addToExp('+')">
             +
           </button>
-          <button class="btn special" onclick="toggleSign()">
-            +/-
+          <button class="btn special" onClick={() => NavigateToAlram()}>
+            Alram
           </button>
           <button class="btn" onclick="addToExp('0')">
             0
