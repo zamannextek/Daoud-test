@@ -1,3 +1,4 @@
+import { Link, Links } from "react-router-dom";
 import "./index.css";
 
 const AlarmDashboard = () => {
@@ -14,7 +15,11 @@ const AlarmDashboard = () => {
           </div>
         </div>
         <div className="part-right">
-          <button className="set-btn">Set Bedtime</button>
+          <button className="set-btn">
+            <Link className="no-link-style" to="/Setbedtime">
+              Set Bedtime
+            </Link>
+          </button>
           <p className="goal">
             💡 92% of your goal
             <br />
@@ -71,9 +76,9 @@ const AlarmDashboard = () => {
       </div>
 
       <div className="lower-card">
-        <div className="add-btn">
-          <button>+</button>
-        </div>
+        
+          <Link className="add-btn" to="/Setalarm"> + </Link>
+        
       </div>
     </div>
   );
