@@ -66,7 +66,7 @@ const Calculate = () => {
           <button class="btn operator" onclick="addToExp('+')">
             +
           </button>
-          <button class="btn special" onClick={() => NavigateToAlram()}>
+          <button class="btn special alram-btn" onClick={() => NavigateToAlram()}>
             Alram
           </button>
           <button class="btn" onclick="addToExp('0')">

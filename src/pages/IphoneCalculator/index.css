@@ -1,0 +1,107 @@
+.iphone-calc-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5faff;
+}
+
+.iphone-calc-body {
+  background: #222;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 32px 20px 24px 20px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iphone-calc-screen {
+  background: #111;
+  color: #fff;
+  border-radius: 16px;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 16px 12px 8px 12px;
+  font-family: 'SF Mono', 'Consolas', monospace;
+}
+
+.iphone-calc-expression {
+  font-size: 1.2rem;
+  color: #bbb;
+  min-height: 24px;
+}
+
+.iphone-calc-result {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  min-height: 36px;
+}
+
+.iphone-calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  grid-gap: 12px;
+}
+
+.iphone-calc-btn {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.iphone-calc-btn:active {
+  background: #444;
+}
+
+.iphone-calc-btn.operator {
+  background: #ff9500;
+  color: #fff;
+}
+
+.iphone-calc-btn.clear {
+  background: #a5a5a5;
+  color: #222;
+}
+
+.iphone-calc-btn.zero {
+  grid-column: span 2;
+  width: 140px;
+  border-radius: 32px;
+  justify-self: left;
+}
+
+@media (max-width: 400px) {
+  .iphone-calc-body {
+    width: 98vw;
+    padding: 12px 2vw 12px 2vw;
+  }
+  .iphone-calc-buttons {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+  }
+  .iphone-calc-btn, .iphone-calc-btn.zero {
+    width: 98%;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+  .iphone-calc-btn.zero {
+    width: 98%;
+    border-radius: 24px;
+  }
+} 
