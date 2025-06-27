@@ -5,17 +5,24 @@ import Calculate from "./pages/Calculater";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Setalarm from "./pages/setalarm";
 import Setbedtime from "./pages/setbedtime";
+import Learning from "./pages/Learning";
+import SigninSignup from "./pages/SigninSignup";
+import IphoneCalculator from "./pages/IphoneCalculator";
 import Registrationpage from "./pages/Registrationpage";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path= "/registrationpage" element= {< Registrationpage />} />
-        <Route path="/" element={<Calculate />} />
+        <Route path="/learing" element={<Learning />} />
+        <Route path="/calculate" element={<Calculate />} />
         <Route path="/splash" element={<AlramSplash />} />
         <Route path="/alram-dashboard" element={<AlarmDashboard />} />
-        <Route path= "/setalarm" element= {<Setalarm />} />
-        <Route path= "/setbedtime" element= {<Setbedtime />} />
+        <Route path="/setalarm" element={<Setalarm />} />
+        <Route path="/setbedtime" element={<Setbedtime />} />
+        <Route path="/signin" element={<SigninSignup />} />
+        <Route path="/signup" element={<SigninSignup />} />
+        <Route path="/iphone-calculator" element={<IphoneCalculator />} />
       </Routes>
     </BrowserRouter>
   );
